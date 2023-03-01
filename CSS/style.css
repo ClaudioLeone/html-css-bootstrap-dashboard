@@ -1,0 +1,58 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+/* GENERAL */
+
+
+main{
+    display: flex;
+    height: calc(100% - var(--nav_hgt));
+}
+
+/* VARIABLES */
+:root{
+    --left_nav_wdt: 70px;
+    --nav_hgt: 50px;
+}
+
+/* CLASSES */
+.content{
+    width: calc(100% - var(--left_nav_wdt));
+    height: 100%;
+    overflow-y: auto;
+    background-color: #191e25;
+}
+
+.left_nav{
+    width: var(--left_nav_wdt);
+    background-color: darkslategrey;
+}
+
+nav{
+    height: var(--nav_hgt);
+    background-color: #27242b;
+    position: sticky
+}
+
+nav .row{
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav_hgt);
+}
+
+nav .row div:first-child{
+    text-align: left;
+    background-color: violet;
+}
+
+nav .row div:nth-child(2){
+    background-color: blue;
+}
+
+nav .row div:last-child{
+    text-align: right;
+    background-color: green;
+}
