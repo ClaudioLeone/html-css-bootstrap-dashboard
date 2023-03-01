@@ -4,13 +4,14 @@
 }
 
 /* GENERAL */
-
-
 main{
     display: flex;
     height: calc(100% - var(--nav_hgt));
 }
 
+.accordion-body{
+    font-size: 0.8rem;
+}
 /* VARIABLES */
 :root{
     --left_nav_wdt: 70px;
@@ -105,6 +106,17 @@ nav .row div:last-child{
 .table_container{
     border: 1px solid lightgray;
     border-radius: 10px;
+}
+
+.accordion_container{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.titles_padding{
+    margin: 0.5rem 0;
+    padding: 0 20px;
 }
 
 /* MEDIA QUERIES */
