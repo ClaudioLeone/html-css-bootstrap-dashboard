@@ -15,6 +15,12 @@ main{
 :root{
     --left_nav_wdt: 70px;
     --nav_hgt: 50px;
+    --left_nav_lg_wdt: 100px;
+}
+
+/* UTILITIES */
+.side_btn{
+
 }
 
 /* CLASSES */
@@ -95,4 +101,11 @@ nav .row div:last-child{
 
 .plus_icon i{
     padding-top: 5px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 992px) {
+    .left_nav{
+        width: var(--left_nav_lg_wdt);
+    }
 }
