@@ -28,7 +28,6 @@ main{
     width: calc(100% - var(--left_nav_wdt));
     height: 100%;
     overflow-y: auto;
-    background-color: #191e25;
 }
 
 .left_nav{
@@ -101,6 +100,11 @@ nav .row div:last-child{
 
 .plus_icon i{
     padding-top: 5px;
+}
+
+.table_container{
+    border: 1px solid lightgray;
+    border-radius: 10px;
 }
 
 /* MEDIA QUERIES */
