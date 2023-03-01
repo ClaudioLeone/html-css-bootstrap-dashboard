@@ -27,7 +27,17 @@ main{
 
 .left_nav{
     width: var(--left_nav_wdt);
-    background-color: darkslategrey;
+    color: white;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: rgb(47, 52, 79);
+}
+
+.left_nav *{
+    padding: 5px 0;
+}
+
+.left_nav > span{
+    justify-self: flex-end;
 }
 
 nav{
@@ -55,4 +65,34 @@ nav .row div:nth-child(2){
 nav .row div:last-child{
     text-align: right;
     background-color: green;
+}
+
+.jumbotron{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.jumbo_container{
+    padding: 10px 0;
+}
+
+.jumbo_container > *{
+    padding: 10px 0;
+}
+
+.jumbo_container > div h5{
+    margin-bottom: 0;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.plus_icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.plus_icon i{
+    padding-top: 5px;
 }
