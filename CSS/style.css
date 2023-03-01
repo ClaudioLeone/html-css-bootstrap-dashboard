@@ -4,6 +4,10 @@
 }
 
 /* GENERAL */
+img{
+    width: 100%;
+}
+
 main{
     display: flex;
     height: calc(100% - var(--nav_hgt));
@@ -108,7 +112,7 @@ nav .row div:last-child{
     border-radius: 10px;
 }
 
-.accordion_container{
+.sect_containers{
     border: 1px solid lightgray;
     border-radius: 10px;
     padding: 0;
