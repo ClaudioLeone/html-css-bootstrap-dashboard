@@ -29,6 +29,14 @@ main{
     font-size: 0.6rem;
 }
 
+.act_icons{
+    display: inline-block;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 28px;
+}
+
 /* CLASSES */
 .content{
     width: calc(100% - var(--left_nav_wdt));
@@ -119,6 +127,10 @@ nav .row div:last-child{
 .table_container{
     border: 1px solid lightgray;
     border-radius: 10px;
+}
+
+.class_avatar{
+    width: 20px;
 }
 
 .first_col_container{
