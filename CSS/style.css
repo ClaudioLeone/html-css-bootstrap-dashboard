@@ -37,6 +37,10 @@ main{
     width: 28px;
 }
 
+.black_txt{
+    color: black;
+}
+
 /* CLASSES */
 .content{
     width: calc(100% - var(--left_nav_wdt));
@@ -61,8 +65,16 @@ main{
 
 nav{
     height: var(--nav_hgt);
-    background-color: #27242b;
+    background-color: white;
     position: sticky
+}
+
+.logo_full{
+    width: 110px;
+}
+
+.logo_small{
+    width: 50px;
 }
 
 nav .row{
@@ -74,17 +86,21 @@ nav .row{
 
 nav .row div:first-child{
     text-align: left;
-    background-color: violet;
 }
 
-nav .row div:nth-child(2){
-    background-color: blue;
+.ms_bell{
+    color: goldenrod;
 }
 
 nav .row div:last-child{
-    text-align: right;
-    background-color: green;
+    text-align: center;
 }
+
+.ms_searchbar{
+    background-color: #e4e4e4;
+    border-width: 0px;
+}
+
 
 .jumbotron{
     background-color: dodgerblue;

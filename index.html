@@ -21,10 +21,20 @@
         <header>
             <nav class="container-fluid">
                 <div class="row">
-                    <div class="col-2">LOGO</div>
-                    <div class="col-4">SEARCHBAR</div>
-                    <div class="col-2">
-                        <i class="fa-solid fa-bell"></i>
+                    <div class="col-2"><img class="logo_small d-lg-none" src="img/mobile-logo.png" alt="logo-small"><img class="logo_full d-none d-lg-inline-block" src="img/logo.svg" alt="logo-full"></div>
+                    
+                    <div class="col-8">
+                        <div class="input-group">
+                            <span class="input-group-text ms_searchbar" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control ms_searchbar" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Prova a cercare: lezioni di Laravel" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="col-2 d-lg-flex align-items-lg-center justify-content-lg-between">
+                        <i class="fa-solid fa-list-ul black_txt d-none d-lg-inline"></i>
+                        <i class="fa-solid fa-circle-question black_txt d-none d-lg-inline"></i>
+                        <i class="fa-solid fa-ellipsis-vertical black_txt d-none d-lg-inline"></i>
+                        <i class="fa-solid fa-bell ms_bell"></i>
                     </div>
                 </div>
             </nav>
