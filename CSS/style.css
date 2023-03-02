@@ -24,8 +24,9 @@ main{
 }
 
 /* UTILITIES */
-.side_btn{
 
+.badge{
+    font-size: 0.6rem;
 }
 
 /* CLASSES */
@@ -107,9 +108,35 @@ nav .row div:last-child{
     padding-top: 5px;
 }
 
+.blaze_plan{
+    font-size: 0.75rem;
+}
+
+.chevron_icon{
+    font-size: 0.75rem;
+}
+
 .table_container{
     border: 1px solid lightgray;
     border-radius: 10px;
+}
+
+.first_col_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first_col_container .card:nth-child(2) {
+    margin-top: 20px;
+}
+
+.second_col_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second_col_container .card:nth-child(2) {
+    margin-top: 20px;
 }
 
 .sect_containers{
