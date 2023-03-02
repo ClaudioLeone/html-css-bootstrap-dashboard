@@ -23,18 +23,34 @@
                 <div class="row">
                     <div class="col-2"><img class="logo_small d-lg-none" src="img/mobile-logo.png" alt="logo-small"><img class="logo_full d-none d-lg-inline-block" src="img/logo.svg" alt="logo-full"></div>
                     
-                    <div class="col-8">
+                    <div class="col-6">
                         <div class="input-group">
                             <span class="input-group-text ms_searchbar" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            
                             <input type="text" class="form-control ms_searchbar" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Prova a cercare: lezioni di Laravel" aria-describedby="basic-addon1">
                         </div>
                     </div>
 
                     <div class="col-2 d-lg-flex align-items-lg-center justify-content-lg-between">
                         <i class="fa-solid fa-list-ul black_txt d-none d-lg-inline"></i>
+
                         <i class="fa-solid fa-circle-question black_txt d-none d-lg-inline"></i>
+
                         <i class="fa-solid fa-ellipsis-vertical black_txt d-none d-lg-inline"></i>
-                        <i class="fa-solid fa-bell ms_bell"></i>
+
+                        <div class="dropstart">
+                            <button class="border-0 bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell ms_bell"></i>
+                            </button>
+
+                            <ul class="dropdown-menu ms_dropdown">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -42,23 +58,30 @@
 
         <main>
             <div class="left_nav d-flex flex-column text-center justify-content-between">
-                <div class="d-flex flex-column text-center">
-                    <span>
+                <div class="d-flex flex-column text-center p-0">
+                    <span class="sidebar_icons">
                         <i class="fa-solid fa-house side_btn"></i>
+
                         <span class="d-none d-lg-inline">Home</span>
                     </span>
 
-                    <span>
+                    <span class="sidebar_icons">
                         <i class="fa-solid fa-chart-simple side_btn"></i>
+
                         <span class="d-none d-lg-inline">Stats</span>
                     </span>
 
-                    <span>
+                    <span class="sidebar_icons">
                         <i class="fa-solid fa-signal side_btn"></i>
+
                         <span class="d-none d-lg-inline">Signals</span>
                     </span>
                 </div>
-                <span><i class="fa-solid fa-gear"></i></span>
+                <span class="sidebar_icons">
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span class="d-none d-lg-inline">Admin</span>
+                </span>
             </div>
             
             <div class="content">
@@ -113,67 +136,103 @@
                                     <thead>
                                         <tr>
                                             <th class="text-start" scope="col">Nome</th>
+
                                             <th class="d-none d-lg-table-cell" scope="col">Data inizio</th>
+
                                             <th class="d-none d-lg-table-cell" scope="col">ROI</th>
+
                                             <th scope="col">Stato</th>
+
                                             <th scope="col">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 75</td>
+                                            
                                             <td class="d-none d-lg-table-cell">01/03/2023</td>
+
                                             <td class="d-none d-lg-table-cell">20%</td>
+
                                             <td><span class="badge text-bg-success">Done</span></td>
+
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 76</td>
+                                            
                                             <td class="d-none d-lg-table-cell">02/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-success">Done</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 77</td>
+                                            
                                             <td class="d-none d-lg-table-cell">03/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-warning">Process</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 78</td>
+                                            
                                             <td class="d-none d-lg-table-cell">04/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-success">Done</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 79</td>
+                                            
                                             <td class="d-none d-lg-table-cell">05/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-danger">Failed</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 80</td>
+                                            
                                             <td class="d-none d-lg-table-cell">06/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-success">Done</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 81</td>
+                                            
                                             <td class="d-none d-lg-table-cell">07/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-danger">Failed</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-start"><img class="class_avatar" src="img/class-avatar.jpg" alt="class-avatar"> Classe 82</td>
+                                            
                                             <td class="d-none d-lg-table-cell">08/03/2023</td>
+                                            
                                             <td class="d-none d-lg-table-cell">20%</td>
+                                            
                                             <td><span class="badge text-bg-success">Done</span></td>
+                                            
                                             <td><span class="act_icons"><i class="fa-solid fa-pencil"></i></span> <span class="act_icons"><i class="fa-solid fa-trash-can"></i></span></td>
                                         </tr>
                                     </tbody>
@@ -187,13 +246,13 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Come aggiungere un nuovo studente?
+                                            Come aggiungere un nuovo studente?
                                         </button>
                                     </h2>
             
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla optio sunt vero ratione asperiores aut fuga iusto tempora quisquam earum qui nesciunt maiores, doloribus officiis amet quaerat quasi tempore! Hic?
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla optio sunt vero ratione asperiores aut fuga iusto tempora quisquam earum qui nesciunt maiores, doloribus officiis amet quaerat quasi tempore! Hic?
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +260,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Come posso accedere alle informazioni del mio account?
+                                            Come posso accedere alle informazioni del mio account?
                                         </button>
                                     </h2>
             
@@ -272,12 +331,15 @@
     
                             <div class="card-body">
                               <h5 class="card-title">Utenti attivi</h5>
+
                               <p class="card-text">Lista degli utenti attivi nell'ultimo mese</p>
                             </div>
     
                             <ul class="list-group list-group-flush">
                               <li class="list-group-item">Gennaio: 1200</li>
+
                               <li class="list-group-item">Febbraio: 800</li>
+                              
                               <li class="list-group-item">Marzo: 1500</li>
                             </ul>
     

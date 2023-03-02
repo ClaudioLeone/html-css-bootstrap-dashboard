@@ -24,7 +24,6 @@ main{
 }
 
 /* UTILITIES */
-
 .badge{
     font-size: 0.6rem;
 }
@@ -39,6 +38,14 @@ main{
 
 .black_txt{
     color: black;
+}
+
+.sidebar_icons:hover{
+    background-color: lightgrey;
+}
+
+.ms_dropdown{
+    z-index: 9999;
 }
 
 /* CLASSES */
